@@ -1,0 +1,11 @@
+{
+    "name": "wp-kadima-theme",
+    "version": "1.0.0",
+    "scripts": {
+        "watch": "node-sass ./kadimatheme/sass/main.sass ./kadimatheme/css/style.css -w",
+        "build": "node-sass ./kadimatheme/sass/main.sass ./kadimatheme/css/style.css"
+    },
+    "devDependencies": {
+        "node-sass": "^4.11.0"
+    }
+}
