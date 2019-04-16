@@ -1,7 +1,7 @@
 # Tema Kadima
 > “O espaço entre a teoria e a prática não é tão grande como é, a teoria na prática.”
 
-<img src="https://avatars1.githubusercontent.com/u/44736631?s=400&u=3f7d24e441b4eef1da21cd18717b18acdf7e9095&v=4">
+<img width="100" src="https://avatars1.githubusercontent.com/u/44736631?s=400&u=3f7d24e441b4eef1da21cd18717b18acdf7e9095&v=4">
 
 ## Ambiente de desenvolvimento
 O uso do docker é opcional, porém irá facilitar muito o desenvolvimento.
