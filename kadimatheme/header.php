@@ -25,7 +25,7 @@
                     'theme_location' => 'primary',
                     'depth' => 2,
                     'container' => 'div',
-                    'container_class' => 'collapse navbar-collapse',
+                    'container_class' => 'collapse navbar-collapse theme-nav',
                     'container_id' => 'kadima-navbar',
                     'menu_class' => 'nav navbar-nav',
                     'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
