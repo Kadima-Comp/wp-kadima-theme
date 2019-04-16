@@ -3,6 +3,8 @@
     register_nav_menus(array('primary' => __('Primary Menu', 'kadimatheme')));
 
     function load_assets() {
+        wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array('jquery'), '4.3.1', true);
+        wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(), '4.3.1', 'all');
         wp_enqueue_style('template', get_template_directory_uri() . '/css/base.css', array(), '1.0', 'all');
     }
 
