@@ -1,6 +1,10 @@
 # Tema Kadima
 <img width="100" src="https://avatars1.githubusercontent.com/u/44736631?s=400&u=3f7d24e441b4eef1da21cd18717b18acdf7e9095&v=4">
 
+## Sobre o WordPress
+
+> WordPress é um sistema livre e aberto de gestão de conteúdo para internet (do inglês: Content Management System - CMS), baseado em PHP com banco de dados MySQL, executado em um servidor interpretador, voltado principalmente para a criação de páginas eletrônicas (sites) e blogs online. Criado a partir do extinto b2/cafelog, por Ryan Boren e Matthew Mullenweg, e distribuído gratuitamente sob a GNU General Public License.
+
 ## Ambiente de desenvolvimento
 
 * [Docker](https://www.docker.com/) - Criação de containers
