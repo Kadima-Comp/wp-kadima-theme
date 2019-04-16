@@ -1,6 +1,8 @@
 # Tema Kadima
 > “O espaço entre a teoria e a prática não é tão grande como é, a teoria na prática.”
 
+<img style="height: 450px; width: 100%; object-fit: contain" src="https://raw.githubusercontent.com/Kadima-Comp/wp-kadima-theme/master/kadimatheme/screenshot.png">
+
 ## Ambiente de desenvolvimento
 O uso do docker é opcional, porém irá facilitar muito o desenvolvimento.
 
