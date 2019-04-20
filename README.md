@@ -66,10 +66,10 @@ $ docker-compose down
 
 ## Windows
 
-Especificamente no caso do windows, o docker pode não ser iniciado em localhost. Então caso não seja possivel acessar apenas execute:
+No windows, o docker pode não ser iniciado em localhost então caso não seja possivel acessar "localhost" execute:
 
 ```sh
 $ docker-machine ip default
 ```
 
-E com isso você receberá um ip, este deverá substituir o "localhost" durante todo o desenvolvimento.
+E com isso você receberá um ip que deverá substituir o "localhost" da url.
