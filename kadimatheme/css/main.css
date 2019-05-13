@@ -4,7 +4,7 @@
 .theme--home header {
     display: flex;
     align-items: center;
-    min-height: 50vh;
+    min-height: 60vh;
     padding: 0 6%;
     background-color: #6200ee;
 }
@@ -31,15 +31,19 @@
 }
 
 .footer-copyright {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 10px 0 10px 0;
     background-color: #212530;
     color: #c9c7ce;
     font-size: 1.2rem;
 }
 
-.glass {
-    background-color: rgba(250, 250, 250, 0.4);
+.page-footer .glass {
+    background-color: rgba(150, 150, 150, 0.6);
+    padding-top: 10px;
+}
+
+.container .row {
+    margin-bottom: 3px;
 }
 
 .input-email  {
@@ -72,4 +76,12 @@
         -ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
          -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+p {
+    text-align: center;
+    margin: 30px;
+    text-shadow: 2px 2px 2px rgb(40, 40, 40);
+    color: rgb(230, 230, 230);
+    font-size: 4rem;
 }

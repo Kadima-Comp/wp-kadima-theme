@@ -30,6 +30,11 @@
             </div>
         </div>
     </div>
+
+    <?php get_search_form(); ?><!-- Referente ao card de Widget de Pesquisa -->
+
 </section>
 
-<?php // get_footer(); ?>
+
+<?php get_sidebar(); ?><!-- Sidebar está vazia -->
+<?php get_footer(); ?><!-- Falta as colunas dos widgets -->

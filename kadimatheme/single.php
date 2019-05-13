@@ -1,7 +1,6 @@
-<?php get_header(); ?>
-
 <?php while (have_posts()) : the_post(); ?>
-    <p>
-        <?php echo get_template_part('content', get_post_format()); ?>
-    </p>
-<?php endwhile; ?>
+    
+    <?php echo get_template_part('content', get_post_format()); ?><!-- A busca acontece, mas as postagens em si não aparecem -->
+
+<?php endwhile; ?><!-- Precisa arrumar a escolha para 404 -->
+    <?php get_404(); ?><!-- 404 já está sendo puxada, só falta ajeita a página em si -->
