@@ -1,24 +1,40 @@
-.theme--home {
+.btn {
+    max-height: 33px;
+}
+
+.nav-theme {
+    background-color: #6200ee;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: white !important;
+    font-weight: 600;
+}
+.navbar-nav .nav-link:hover {
+    opacity: 0.7;
 }
 
 .theme--home header {
     display: flex;
     align-items: center;
-    min-height: 60vh;
+    min-height: 45vh;
     padding: 0 6%;
     background-color: #6200ee;
 }
 
 .theme--home header h1 {
-    font-size: 10rem;
+    font-size: calc(5rem + 2vw);
     font-weight: 300;
 }
 
 .theme--home header h2 {
-    font-size: 5rem;
+    font-size: calc(2rem + 2vw);
 }
 
-.theme--home header h1, .theme--home header h2 {
+.theme--home header h1,
+.theme--home header h2 {
     color: #fff;
 }
 
@@ -46,7 +62,7 @@
     margin-bottom: 3px;
 }
 
-.input-email  {
+.input-email {
     z-index: 1;
     transform: translate(0, -50%);
     margin: auto;
@@ -55,33 +71,74 @@
     padding: 5px 10px;
 }
 
-.input-email  h3 {
+.input-email h3 {
     text-align: left;
     margin-bottom: 10px;
+    padding: 10px;
     font-size: 20px;
 }
 
-.input-email  input{
-   font-size: 15px;
-   min-height: 33px
+.input-email input {
+    font-size: 15px;
+    min-height: 33px;
 }
 
-.input-email  .capture-email-button {
+.input-email .capture-email-button {
     font-size: 16px;
 }
 
 .elevation {
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-       -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        -ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-         -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-p {
-    text-align: center;
-    margin: 30px;
-    text-shadow: 2px 2px 2px rgb(40, 40, 40);
-    color: rgb(230, 230, 230);
-    font-size: 4rem;
+.posts-container {
+    width: 75%;
+    margin: auto;
+    padding: 5px;
+}
+
+.posts-container .post {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    min-height: 130px;
+    margin-bottom: 25px;
+}
+.posts-container .post span {
+    font-size: 1.4rem;
+}
+.posts-container .post a {
+    font-size: 2.6rem;
+    line-height: 23px;
+}
+.posts-container .post p {
+    font-size: 1.2rem;
+}
+
+.posts-container .post img {
+    max-width: 120px;
+    min-width: 120px;
+    min-height: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.posts-container .post div {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 540px) {
+    .posts-container {
+        width: 90%;
+    }
 }

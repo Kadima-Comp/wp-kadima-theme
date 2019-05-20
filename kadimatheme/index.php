@@ -9,7 +9,7 @@
     </header>
 
     <div class="card w-75 input-email elevation">
-        <div class="card-body">
+        <div>
             <h3>Se cadastre e fique por dentro das novidades!</h3>
             <div class="input-group mb-3">
                 <input
@@ -31,7 +31,39 @@
         </div>
     </div>
 
-    <?php get_search_form(); ?><!-- Referente ao card de Widget de Pesquisa -->
+    <section class="posts-container">
+        <?php
+            if(have_posts()){
+                while(have_posts()) {
+                    the_post();
+                ?>
+                <div class="post">
+                    <img src="<?php
+                        $thumb_id = get_post_thumbnail_id();
+                        $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
+                        echo $thumb_url[0];
+                        ?>" alt="post-thumb"
+                    >
+
+                    <div>
+                        <a href="#"><?php the_title();?></a>
+                        <span>
+                            <b><?php the_author(); ?></b>,
+                            <?php the_time('d') ?>/<?php the_time('F') ?>/<?php the_time('Y') ?>, às
+                            <?php the_time() ?>
+                        </span>
+                        <p> <?php the_content();?></p>
+                    </div>
+                </div>
+                <?php
+            }
+        }
+        ?>
+    </section>
+
+</div>
+
+    <!-- <?php get_search_form(); ?>Referente ao card de Widget de Pesquisa -->
 
 </section>
 

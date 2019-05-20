@@ -1,7 +1,3 @@
-<style>
-<?php include 'css/main.css'; ?>
-</style><!-- Tem q ajeitar isso depois, n estava importando normal, então coloquei forcei isso -->
-
 <footer class="page-footer">
     <div class="glass">
         <div class="container-fluid">
