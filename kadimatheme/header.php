@@ -8,7 +8,7 @@
         <?php wp_head(); ?>
     </head>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+    <nav class="navbar navbar-expand-md navbar-light nav-theme" role="navigation">
         <div>
             <button
                 class="navbar-toggler"
@@ -36,4 +36,4 @@
         </div>
     </nav>
 
-   
+
