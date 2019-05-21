@@ -73,6 +73,29 @@
     <?php dynamic_sidebar( 'sidebar-1' )?>
 </section>
 
+<!-- Loop de Posts para Página de importação -->
+<div class="col-md-8">
+    <?php
+    if(have_posts()):
+        while(have_posts()): the_post();
+    ?>
+    
+    <article>
+        <p>Categorias: <?php the_category(' '); ?></p>
+        <h2><?php the_title(); ?></h2>
+        <p>Por <?php the_autor_posts_link(); ?>, <?php echo get_the_date(); ?></p>
+        <?php the_content(); ?>
+    </article>
 
+    <?php 
+        endwhile; 
+    else: 
+    ?>
+        <p>Não há posts disponíveis.</p>
+    <?php endif; ?>
+</div>
+
+
+<?php get_sidebar(); ?><!-- Sidebar está vazia -->
 
 <?php get_footer(); ?><!-- Falta as colunas dos widgets -->
