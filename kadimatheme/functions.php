@@ -19,6 +19,8 @@
 
     add_action('widgets_init', 'wp_sidebars');
 
+    
+
     function wp_sidebars(){
         register_sidebar(
             array(
