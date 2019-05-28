@@ -6,7 +6,7 @@
                     <h3 class="titulo-footer text-center">
                         Se cadastre e fique por dentro das novidades!
                     </h3>
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-3 footer-email">
                         <input
                             type="text"
                             class="capture-email-field form-control"
@@ -29,7 +29,7 @@
 
         <div class="container text-left">
             <div class="row">
-                <?php dynamic_sidebar( 'footer-1' )?>
+                <?php dynamic_sidebar('footer-1')?>
             </div>
         </div>
 

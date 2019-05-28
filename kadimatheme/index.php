@@ -47,7 +47,7 @@
                         >
 
                         <div>
-                            <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
+                            <a class="post-title" href="<?php the_permalink(); ?>"><?php the_title();?></a>
                             <span>
                                 <b><?php the_author(); ?></b>,
                                 <?php the_time('d') ?>/<?php the_time('F') ?>/<?php the_time('Y') ?>, às
