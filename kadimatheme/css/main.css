@@ -34,6 +34,7 @@
 
 .theme--home header h2 {
     font-size: calc(2rem + 2vw);
+    margin-bottom: 5vh;
 }
 
 .theme--home header h1,

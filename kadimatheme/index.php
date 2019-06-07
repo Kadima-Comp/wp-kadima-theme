@@ -53,7 +53,10 @@
                                 <?php the_time('d') ?>/<?php the_time('F') ?>/<?php the_time('Y') ?>, às
                                 <?php the_time() ?>
                             </span>
-                            <p> <?php the_content();?></p>
+                            <p> 
+                                <?php the_excerpt() ?>
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">Continue lendo </a>
+                            </p>
                         </div>
                     </div>
                     <?php
