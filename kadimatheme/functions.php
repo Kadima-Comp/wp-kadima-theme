@@ -10,9 +10,11 @@
         wp_enqueue_style('roboto-font', 'https://fonts.googleapis.com/css?family=Roboto', array(), '1.0', 'all');
         wp_enqueue_style('base', get_template_directory_uri() . '/css/base.css');
         wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css', array(), '1.1', 'all');
+        wp_enqueue_style('comments', get_template_directory_uri() . '/css/comments.css');
     }
 
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'html5' , array('comment-list', 'comment-form'));
 
     add_action('wp_enqueue_scripts', 'load_assets');
 

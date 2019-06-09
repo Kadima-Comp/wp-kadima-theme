@@ -35,6 +35,18 @@ the_post();
 
         </section>
 
+        <div class="row col-md-12">
+            <section class="posts-container col-md-6">
+
+                <?php
+                if(comments_open()):
+                    comments_template();
+                endif;
+                ?>
+
+            </section>
+        </div>
+        
         <aside class="col-md-3">
             <?php get_sidebar(); ?><!-- Sidebar está vazia -->
         </aside>
