@@ -18,6 +18,11 @@ the_post();
     </header>
 
     <div class="row col-md-12">
+
+        <aside class="social">
+            <?php get_sidebar(); ?><!-- Sidebar está vazia -->
+        </aside>
+
         <section class="posts-container col-md-6">
 
                     <div class="post" style="display: block">
@@ -35,6 +40,10 @@ the_post();
 
         </section>
 
+        <aside class="sidebar-right">
+            <?php dynamic_sidebar( 'sidebar-1' )?>
+        </aside>
+
         <div class="row col-md-12">
             <section class="posts-container col-md-6">
 
@@ -45,14 +54,12 @@ the_post();
                 ?>
 
             </section>
+
         </div>
-        
-        <aside class="col-md-3">
-            <?php get_sidebar(); ?><!-- Sidebar está vazia -->
-        </aside>
+
+
     </div>
 
-    <?php dynamic_sidebar( 'sidebar-1' )?>
 </section>
 
 <?php
@@ -60,7 +67,6 @@ the_post();
 }
 ?>
 
-<?php get_sidebar(); ?><!-- Sidebar está vazia -->
 
 <?php get_footer(); ?><!-- Falta as colunas dos widgets -->
 

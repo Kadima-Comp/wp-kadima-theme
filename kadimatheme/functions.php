@@ -11,6 +11,7 @@
         wp_enqueue_style('base', get_template_directory_uri() . '/css/base.css');
         wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css', array(), '1.1', 'all');
         wp_enqueue_style('comments', get_template_directory_uri() . '/css/comments.css');
+        wp_enqueue_style('sidebar', get_template_directory_uri() . '/css/sidebar.css');
     }
 
     add_theme_support( 'post-thumbnails' );
@@ -26,12 +27,13 @@
                 'name' => 'Sidebar Direita',
                 'id' => 'sidebar-1',
                 'description' => 'Adicione elementos a sua barra lateral direita da página',
-                'before_widget' => '<div class="widget-area>"',
+                'before_widget' => '<div class="widget-area"> ',
                 'after_widget' => '</div>',
-                'before_title' => '<h2 class="widget-title">',
-                'after_title' => '</h2>'
+                'before_title' => '<h2 class="widget-title"> ',
+                'after_title' => '</h2>',
             )
         );
+
         register_sidebar(
             array(
                 'name' => 'Footer',
@@ -40,7 +42,7 @@
                 'before_widget' => '<div class="col-md-3 mx-auto">',
                 'after_widget' => '</div>',
                 'before_title' => '<h5 class="text-uppercase titulo-footer">',
-                'after_title' => '</h5>'
+                'after_title' => '</h5>',
             )
         );
         register_sidebar(
@@ -52,7 +54,7 @@
                 'before_widget' => '<li>',
                 'after_widget' => '</li>',
                 'before_title' => '<h5 style="display: none">',
-                'after_title' => '</h5>'
+                'after_title' => '</h5>',
             )
         );
     }

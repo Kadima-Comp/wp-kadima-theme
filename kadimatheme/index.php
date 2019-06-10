@@ -32,6 +32,11 @@
     </div>
 
     <div class="row col-md-12">
+
+        <aside class="social">
+            <?php dynamic_sidebar('sidebar-2'); ?><!-- redes sociais -->
+        </aside>
+
         <section class="posts-container col-md-6">
             <?php
                 if(have_posts()){
@@ -62,17 +67,16 @@
             ?>
         </section>
 
-        <aside class="col-md-3">
-            <?php get_sidebar(); ?><!-- Sidebar está vazia -->
+        <aside class="sidebar-right">
+            <?php dynamic_sidebar( 'sidebar-1' )?>
         </aside>
+
     </div>
 </div>
 
     <!-- <?php get_search_form(); ?>Referente ao card de Widget de Pesquisa -->
 
-    <?php dynamic_sidebar( 'sidebar-1' )?>
 </section>
 
-<?php get_sidebar(); ?><!-- Sidebar está vazia -->
 
 <?php get_footer(); ?><!-- Falta as colunas dos widgets -->
