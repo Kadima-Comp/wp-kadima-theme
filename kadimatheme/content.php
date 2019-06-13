@@ -4,7 +4,7 @@ if(have_posts()){
 while(have_posts()) {
 the_post();
 ?>
-<section class="theme--content wrapper">
+<section class="theme--content">
     <header style="background-image: url(
         '<?php
             $thumb_id = get_post_thumbnail_id();

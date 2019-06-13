@@ -226,8 +226,8 @@
     Para garantir um bom efeito, coloquei também uma altura
     mínima de 700px;
     */
-    height: 100vh;
-    min-height: 700px;
+    height: 80vh;
+    min-height: 400px;
 
     /* Para manter a transformação em espaço 3D, indicamos o mesmo
     valor do elemento pai (preserve-3d).
