@@ -1,0 +1,27 @@
+.social{
+    float: left;
+    display: inline-block;
+    left: 0;
+    position: fixed;
+}
+.social .row{
+    display: block;
+}
+.social .li{
+    margin: 0 0 5px 0;
+}
+.sidebar-right {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+}
+aside .sidebar-right h2{
+    display: block;
+}
+.sidebar-right p{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+.sidebar-right .widget-area{
+    margin: 0 0 20px 0;
+}
