@@ -14,6 +14,16 @@
         wp_enqueue_style('sidebar', get_template_directory_uri() . '/css/sidebar.css');
     }
 
+    function custom_excerpt_length( $length ) {
+        return 40;// Qtde de caracteres distribuídos do content dos posts do loop
+    }
+    add_filter( 'excerpt_length', 'custom_excerpt_length');
+
+    function novo_leia_mais($more) {
+        return '...';// "Leia mais" dos posts do loop
+    }
+    add_filter('excerpt_more', 'novo_leia_mais');
+
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'html5' , array('comment-list', 'comment-form'));
 
