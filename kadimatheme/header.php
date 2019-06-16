@@ -9,7 +9,7 @@
     </head>
 
     <nav class="navbar navbar-expand-md navbar-light nav-theme" role="navigation">
-        <div>
+        <div class="p-2">
             <button
                 class="navbar-toggler"
                 type="button"

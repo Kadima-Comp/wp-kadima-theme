@@ -32,6 +32,11 @@
     </div>
 
     <div class="row col-md-12">
+
+        <aside class="social">
+            <?php dynamic_sidebar('sidebar-2'); ?><!-- redes sociais -->
+        </aside>
+
         <section class="posts-container col-md-6">
             <?php
                 if(have_posts()){
@@ -53,7 +58,10 @@
                                 <?php the_time('d') ?>/<?php the_time('F') ?>/<?php the_time('Y') ?>, às
                                 <?php the_time() ?>
                             </span>
-                            <p> <?php the_content();?></p>
+                            <p> 
+                                <?php the_excerpt() ?>
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">Continue lendo </a>
+                            </p>
                         </div>
                     </div>
                     <?php
@@ -62,17 +70,16 @@
             ?>
         </section>
 
-        <aside class="col-md-3">
-            <?php get_sidebar(); ?><!-- Sidebar está vazia -->
+        <aside class="sidebar-right">
+            <?php dynamic_sidebar( 'sidebar-1' )?>
         </aside>
+
     </div>
 </div>
 
     <!-- <?php get_search_form(); ?>Referente ao card de Widget de Pesquisa -->
 
-    <?php dynamic_sidebar( 'sidebar-1' )?>
 </section>
 
-<?php get_sidebar(); ?><!-- Sidebar está vazia -->
 
 <?php get_footer(); ?><!-- Falta as colunas dos widgets -->
