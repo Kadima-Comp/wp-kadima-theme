@@ -32,7 +32,7 @@
     </div>
 
     <div class="row col-md-12">
-        <?php get_sidebar(); ?>
+        
         <aside class="social">
             <?php dynamic_sidebar('sidebar-2'); ?><!-- redes sociais -->
         </aside>
