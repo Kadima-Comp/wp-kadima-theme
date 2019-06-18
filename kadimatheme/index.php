@@ -69,7 +69,7 @@
             ?>
         </section>
 
-        <aside class="sidebar-right">
+        <aside class="sidebar-right col-md-3">
             <?php dynamic_sidebar( 'sidebar-1' )?>
         </aside>
 

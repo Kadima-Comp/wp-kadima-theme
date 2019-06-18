@@ -19,23 +19,125 @@
     opacity: 0.7;
 }
 
-/* Estilo do SIDEBAR */
-.sidebar-right {
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: block;
+/* Estilo das POSTAGENS */
+.posts-container {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
 }
-aside .sidebar-right h2{
-    display: block;
+
+.posts-container .post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
 }
-.sidebar-right p{
+.posts-container .post span {
+    font-size: 1.4rem;
+}
+.posts-container .post .post-title {
+    font-size: 2.6rem;
+    line-height: 23px;
+}
+.posts-container .post p {
     font-size: 1.2rem;
-    font-weight: normal;
+}
+
+.posts-container .post img {
+    max-width: 120px;
+    min-width: 120px;
+    min-height: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.posts-container .post div {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* -------------------------- */
+
+/* Estilo dos WIDGETS - SIDEBAR RIGHT */
+.sidebar-right {
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Fontes titulos dos elementos do widgets */
+.sidebar-right h2{
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 .sidebar-right .widget-area{
     margin: 0 0 20px 0;
 }
+/* Tratamento das postagens recentes dos elementos do widgets */
+.sidebar-right div ul li a{
+    color: black;
+}
+.sidebar-right div ul li a:link{
+    text-shadow: 2px 2px 3px white;
+}
+.sidebar-right div ul li a:hover{
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+.sidebar-right div ul li span:hover{
+    text-decoration: underline;
+}
 /* --------------------------- */
+/* Tratamento de TEXTO dos elementos */
+.sidebar-right div div p{
+    color: black;
+    text-shadow: 2px 2px 3px white;
+    text-align: justify;
+}
+/* -------------------------- */
+/* Tratamento SOMENTE de IMAGEM dos elementos */
+.sidebar-right img{
+    max-width: 15%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid whitesmoke; 
+}
+/* -------------------------- */
+/* Tratamento de IMAGEM e TEXTO dos elementos */
+.sidebar-right div{
+    max-width: 100%;
+    max-height: auto;
+}
+.sidebar-right div a img{
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid whitesmoke; 
+}
+/* -------------------------- */
+/* Tratamento de CAMPO DE PESQUISA dos elementos */
+.sidebar-right form div{
+    width: 100%;
+    height: auto;
+}
+.sidebar-right form div input{
+    width: 70%;
+    height: auto;
+    margin: 0px 2px 2px 0px;
+}
+.sidebar-right form div div{
+    width: auto;
+    height: auto;
+    margin: 0px 2px 2px 0px;
+}
+/* -------------------------- */
+
 /* Estilo do FOOTER */
 .page-footer{
     background-color: black;
@@ -71,6 +173,7 @@ aside .sidebar-right h2{
 .footers{
     border-right: 1px solid lightgray;
     margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 /* Fontes titulos dos elementos do footer */
 .footers h5{
@@ -82,7 +185,6 @@ aside .sidebar-right h2{
     color: black;
 }
 .footers div ul li a:link{
-    font-size: 1.3rem;
     text-shadow: 2px 2px 3px white;
 }
 .footers div ul li a:hover{
@@ -104,9 +206,6 @@ aside .sidebar-right h2{
     text-decoration: none;
 }
 /* -------------------------- */
-.footers ul li{
-    font-size: 1.3rem;
-}
 /* Tratamento de SPAM dos elementos com ULs */
 .footers ul li span{
     color: black;
@@ -229,47 +328,6 @@ aside .sidebar-right h2{
         0 6px 6px rgba(0, 0, 0, 0.23);
     -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-
-/* Estilo dos WIDGETS */
-
-.posts-container {
-    width: 75%;
-    margin: 0 auto;
-    padding: 5px;
-}
-
-.posts-container .post {
-    display: flex;
-    align-items: center;
-    max-width: 500px;
-    min-height: 130px;
-    margin-bottom: 25px;
-}
-.posts-container .post span {
-    font-size: 1.4rem;
-}
-.posts-container .post .post-title {
-    font-size: 2.6rem;
-    line-height: 23px;
-}
-.posts-container .post p {
-    font-size: 1.2rem;
-}
-
-.posts-container .post img {
-    max-width: 120px;
-    min-width: 120px;
-    min-height: 150px;
-    max-height: 150px;
-    object-fit: cover;
-}
-
-.posts-container .post div {
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 /* Estilo do CONTENT */

@@ -22,7 +22,7 @@ the_post();
                
         <?php get_sidebar(); ?><!-- redes sociais -->
 
-        <section class="posts-container col-md-6">
+        <section class="posts-container col-md-7">
 
                     <div class="post" style="display: block">
 
@@ -39,7 +39,7 @@ the_post();
 
         </section>
 
-        <aside class="sidebar-right">
+        <aside class="sidebar-right col-md-3">
             <?php dynamic_sidebar( 'sidebar-1' )?>
         </aside>
 
