@@ -34,9 +34,9 @@
     function wp_sidebars(){
         register_sidebar(
             array(
-                'name' => 'Sidebar Direita',
+                'name' => 'Sidebar',
                 'id' => 'sidebar-1',
-                'description' => 'Adicione elementos a sua barra lateral direita da página',
+                'description' => 'Adicione elementos a sua sidebar da página',
                 'before_widget' => '<div class="widget-area"> ',
                 'after_widget' => '</div>',
                 'before_title' => '<h2 class="widget-title"> ',
@@ -49,7 +49,7 @@
                 'name' => 'Footer',
                 'id' => 'footer-1',
                 'description' => 'Adicione elementos ao rodapé da página',
-                'before_widget' => '<div class="col-md-3 mx-auto">',
+                'before_widget' => '<div class="footers col-md-3 mx-auto">',
                 'after_widget' => '</div>',
                 'before_title' => '<h5 class="text-uppercase titulo-footer">',
                 'after_title' => '</h5>',
@@ -57,14 +57,17 @@
         );
         register_sidebar(
             array(
-                'name' => 'Sidebar Esquerda',
+                'name' => 'Barra de Redes Socias',
                 'id' => 'sidebar-2',
-                'description' => 'Adicione elementos a sua barra lateral esquerda da página. Para um
+                'description' => 'Adicione elementos a sua barra de redes sociais. Para um
                 melhor aproveitamento da página recomendamos utilizar somente pequenas figuras.',
                 'before_widget' => '<li>',
                 'after_widget' => '</li>',
-                'before_title' => '<h5 style="display: none">',
+                'before_title' => '<h5>',
                 'after_title' => '</h5>',
             )
         );
     }
+
+    
+?>

@@ -1,19 +1,20 @@
-.social{
-    float: left;
-    display: inline-block;
-    left: 0;
+.social-background{
     position: fixed;
+    left: .2%;
+    top: 36%;
+    max-width: 8rem;
+    max-height: auto;
+    border-radius: 5%;
+    background-color: rgba(250, 250, 250, 0.1);
+    opacity: 0;
 }
-.social .row{
-    display: block;
+.social li img{
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+    border-radius: 8%;
 }
-.social .li{
-    margin: 0 0 5px 0;
-    max-width: 50px;
-    max-height: 50px;
-    width: auto;
-    height: auto;
-}
+
 .sidebar-right {
     font-size: 1.5rem;
     font-weight: bold;

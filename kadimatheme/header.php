@@ -3,10 +3,38 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width" />
+        
         <title><?php wp_title('|', true, 'right'); ?></title>
         <?php wp_head(); ?>
     </head>
+
+    <script>
+        function animeScroll(){
+            //console.log($(window).scrollTop());
+            
+            var mediaini =  ($('section').offset().top)*2;
+            //console.log("Media Inicial: ", mediaini);
+
+            var mediafim = ($('footer.page-footer').offset().top - $('aside#social').innerHeight())/1.4 ;
+            //console.log("Media Final: ", mediafim);
+
+            //if (130 <= $(window).scrollTop() && $(window).scrollTop() <= 800) {
+            if (mediaini < $(window).scrollTop() && $(window).scrollTop() < mediafim) {
+                //alert('Iniciou');
+                document.getElementById('social').style.opacity="1";
+                document.getElementById('social').style.transition=".2s";
+                document.getElementById('social').style.visibility="visible";
+            } else {
+                document.getElementById('social').style.opacity="0";
+                document.getElementById('social').style.visibility="hidden";
+            }
+        };
+        window.addEventListener('scroll', function(){
+            animeScroll();
+        })
+    </script>
 
     <nav class="navbar navbar-expand-md navbar-light nav-theme" role="navigation">
         <div class="p-2">

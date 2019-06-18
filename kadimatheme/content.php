@@ -19,9 +19,8 @@ the_post();
 
     <div class="row col-md-12">
 
-        <aside class="social">
-            <?php get_sidebar(); ?><!-- Sidebar está vazia -->
-        </aside>
+               
+        <?php get_sidebar(); ?><!-- redes sociais -->
 
         <section class="posts-container col-md-6">
 

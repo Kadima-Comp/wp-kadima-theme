@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="theme--home">
-    <header class="header">
+    <header id="header-header" class="header">
         <div class="container-fluid">
             <h1><?php bloginfo($show = 'name'); ?></h1>
             <h2><?php bloginfo($show = 'description'); ?></h2>
@@ -33,9 +33,8 @@
 
     <div class="row col-md-12">
         
-        <aside class="social">
-            <?php dynamic_sidebar('sidebar-2'); ?><!-- redes sociais -->
-        </aside>
+        
+        <?php get_sidebar(); ?><!-- redes sociais -->
 
         <section class="posts-container col-md-6">
             <?php
@@ -80,6 +79,5 @@
     <!-- <?php get_search_form(); ?>Referente ao card de Widget de Pesquisa -->
 
 </section>
-
 
 <?php get_footer(); ?><!-- Falta as colunas dos widgets -->
