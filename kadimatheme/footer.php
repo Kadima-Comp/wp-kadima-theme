@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="container col-10 col-lg-8 col-xl-6">
-                    <h3 class="titulo-footer text-center">
+                    <h3 class="titulo-footer">
                         Se cadastre e fique por dentro das novidades!
                     </h3>
                     <div class="input-group mb-3 footer-email">
