@@ -6,6 +6,7 @@
 /* Estilo do HEADER */
 .theme-nav > * {
     font-size: 1.6rem;
+    margin: 3% 0 3% 0;
 }
 .nav-theme {
     display: flex;
