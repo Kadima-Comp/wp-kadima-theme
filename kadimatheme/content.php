@@ -19,28 +19,25 @@ the_post();
 
     <div class="row col-md-12">
 
-        <aside class="social">
-            <?php get_sidebar(); ?><!-- Sidebar está vazia -->
-        </aside>
+               
+        <?php get_sidebar(); ?><!-- redes sociais -->
 
-        <section class="posts-container col-md-6">
-
-                    <div class="post" style="display: block">
-
-                        <div style="display: block">
-                            <span>
-
-                                <b>Por <?php the_author(); ?></b>,
-                                <?php the_time('d') ?>/<?php the_time('F') ?>/<?php the_time('Y') ?>, às
-                                <?php the_time() ?>
-                            </span>
-                            <p> <?php the_content();?></p>
-                        </div>
-                    </div>
+        <section class="posts-container postagem col-md-7">
+            <div>
+                <p class="autor">
+                    <b>Por <?php the_author(); ?></b>,
+                    <?php the_time('d') ?>/<?php the_time('F') ?>/<?php the_time('Y') ?>, às
+                    <?php the_time() ?>
+                </p>
+            
+                <div class="content">
+                    <?php the_content();?>
+                </div>
+            </div>
 
         </section>
 
-        <aside class="sidebar-right">
+        <aside class="sidebar-right col-md-3 h-100">
             <?php dynamic_sidebar( 'sidebar-1' )?>
         </aside>
 

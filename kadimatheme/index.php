@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="theme--home">
-    <header class="header">
+    <header id="header-header" class="header">
         <div class="container-fluid">
             <h1><?php bloginfo($show = 'name'); ?></h1>
             <h2><?php bloginfo($show = 'description'); ?></h2>
@@ -32,26 +32,27 @@
     </div>
 
     <div class="row col-md-12">
+        
+        
+        <?php get_sidebar(); ?><!-- redes sociais -->
 
-        <aside class="social">
-            <?php dynamic_sidebar('sidebar-2'); ?><!-- redes sociais -->
-        </aside>
-
-        <section class="posts-container col-md-6">
+        <section class="posts-container col-md-7">
             <?php
                 if(have_posts()){
                     while(have_posts()) {
                         the_post();
                     ?>
                     <div class="post">
-                        <img src="<?php
-                            $thumb_id = get_post_thumbnail_id();
-                            $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
-                            echo $thumb_url[0];
-                            ?>" alt="post-thumb"
-                        >
+                        <a href="<?php the_permalink(); ?>">
+                            <img src="<?php
+                                $thumb_id = get_post_thumbnail_id();
+                                $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
+                                echo $thumb_url[0];
+                                ?>" alt="post-thumb"
+                            >
+                        </a>
 
-                        <div>
+                        <div class="titles">
                             <a class="post-title" href="<?php the_permalink(); ?>"><?php the_title();?></a>
                             <span>
                                 <b><?php the_author(); ?></b>,
@@ -70,7 +71,7 @@
             ?>
         </section>
 
-        <aside class="sidebar-right">
+        <aside class="sidebar-right col-md-3 h-100">
             <?php dynamic_sidebar( 'sidebar-1' )?>
         </aside>
 
@@ -80,6 +81,5 @@
     <!-- <?php get_search_form(); ?>Referente ao card de Widget de Pesquisa -->
 
 </section>
-
 
 <?php get_footer(); ?><!-- Falta as colunas dos widgets -->
