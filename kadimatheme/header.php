@@ -13,16 +13,16 @@
 
     <script>
         function animeScroll(){
-            //console.log($(window).scrollTop());
+            console.log($(window).scrollTop());
             
-            var mediaini =  ($('section').offset().top)*2;
+            //var mediaini =  ($('section').offset().top)*2;
             //console.log("Media Inicial: ", mediaini);
 
-            var mediafim = ($('footer.page-footer').offset().top - $('aside#social').innerHeight())/1.4 ;
-            //console.log("Media Final: ", mediafim);
+            var mediafim = ($('section').innerHeight() - (($('aside#social').innerHeight()*3)/4));
+            console.log("Media Final: ", mediafim);
 
             //if (130 <= $(window).scrollTop() && $(window).scrollTop() <= 800) {
-            if (mediaini < $(window).scrollTop() && $(window).scrollTop() < mediafim) {
+            if (210 < $(window).scrollTop() && $(window).scrollTop() < mediafim) {
                 //alert('Iniciou');
                 document.getElementById('social').style.opacity="1";
                 document.getElementById('social').style.transition=".2s";
@@ -38,7 +38,7 @@
     </script>
 
     <nav class="navbar navbar-expand-md navbar-light nav-theme" role="navigation">
-        <div class="p-2">
+        <div>
             <button
                 class="navbar-toggler"
                 type="button"
