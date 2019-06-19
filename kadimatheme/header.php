@@ -18,11 +18,11 @@
             //var mediaini =  ($('section').offset().top)*2;
             //console.log("Media Inicial: ", mediaini);
 
-            var mediafim = ($('section').innerHeight() - (($('aside#social').innerHeight()*3)/4));
-            console.log("Media Final: ", mediafim);
+            var mediafim = ($('section').innerHeight() - (($('aside#social').innerHeight()*3)/5.2));
+            //console.log("Media Final: ", mediafim);
 
             //if (130 <= $(window).scrollTop() && $(window).scrollTop() <= 800) {
-            if (210 < $(window).scrollTop() && $(window).scrollTop() < mediafim) {
+            if (250 < $(window).scrollTop() && $(window).scrollTop() < mediafim) {
                 //alert('Iniciou');
                 document.getElementById('social').style.opacity="1";
                 document.getElementById('social').style.transition=".2s";
