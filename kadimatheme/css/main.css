@@ -4,14 +4,18 @@
 /* -------------------------- */
 
 /* Estilo do HEADER */
+/* Tratamento dos títulos dos elementos do Menu */
 .theme-nav > * {
     font-size: 1.6rem;
-    margin: 3% 0 3% 0;
+    border: 1px solid red; /* Só pra ver mesmo o q é, depois pode tirar se quiser */
 }
+/* -------------------------- */
+/* Tratamento dos elementos do Menu */
 .nav-theme {
     display: flex;
     justify-content: flex-end;
     padding: .2%;
+    margin: 1% 11% 1% 0;
 }
 .nav-theme div {
     display: flex;
@@ -21,13 +25,17 @@
 .navbar-nav .nav-link {
     text-decoration: none;
     color: black !important;
-    background-color: whitesmoke;
-    margin-right: 2px;
+    margin-right: 5px;
     border-radius: 5px;
+    
 }
 .navbar-nav .nav-link:hover {
     text-shadow: 1px 1px rgb(197, 197, 197);
+    background-color: whitesmoke;
     transition: .4s;
+}
+.search{
+
 }
 /* -------------------------- */
 
@@ -342,7 +350,7 @@
     transform: translate(0, -50%);
     margin: auto;
     background-color: #f9f9f9;
-    padding: 5px 10px;
+    padding: 1.5% 1% 1.2% 1%;
     border-radius: 2px;
 }
 .input-email h3 {
