@@ -7,7 +7,7 @@
 /* Tratamento dos títulos dos elementos do Menu */
 .theme-nav > * {
     font-size: 1.6rem;
-    border: 1px solid red; /* Só pra ver mesmo o q é, depois pode tirar se quiser */
+    border: 1px solid blue; /* Só pra ver mesmo o q é, depois pode tirar se quiser */
 }
 /* -------------------------- */
 /* Tratamento dos elementos do Menu */
@@ -27,7 +27,7 @@
     color: black !important;
     margin-right: 5px;
     border-radius: 5px;
-    
+    border: 1px solid green;
 }
 .navbar-nav .nav-link:hover {
     text-shadow: 1px 1px rgb(197, 197, 197);
