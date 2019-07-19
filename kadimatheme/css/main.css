@@ -6,37 +6,58 @@
 /* Estilo do HEADER */
 /* Tratamento dos títulos dos elementos do Menu */
 .theme-nav > * {
-    font-size: 1.6rem;
-    border: 1px solid blue; /* Só pra ver mesmo o q é, depois pode tirar se quiser */
+    font-size: 1.6rem; /* Só pra ver mesmo o q é, depois pode tirar se quiser */
+    width: 100%;
 }
 /* -------------------------- */
 /* Tratamento dos elementos do Menu */
 .nav-theme {
     display: flex;
     justify-content: flex-end;
-    padding: .2%;
-    margin: 1% 11% 1% 0;
+    margin: .5% 11% .5% 0;
+    
 }
-.nav-theme div {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
+.nav-theme div { /* Tem q continuar ajustando */
+    display: inline-flex;
+    align-items: inline-end;
+    
+    height: 35px;
+}
+div.search{
+    
+    width: 56%;
+    margin: auto;
+}
+div.search form{
+    height: 100%;
+    width: auto;
+}
+div.search form div input{
+    
+    height: 90%;
+    width: auto;
+    
+}
+div.search .searchQ{
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+}
+div.search .searchQ p{
+    font-size: 2rem;
 }
 .navbar-nav .nav-link {
     text-decoration: none;
     color: black !important;
     margin-right: 5px;
     border-radius: 5px;
-    border: 1px solid green;
 }
 .navbar-nav .nav-link:hover {
     text-shadow: 1px 1px rgb(197, 197, 197);
     background-color: whitesmoke;
     transition: .4s;
 }
-.search{
 
-}
 /* -------------------------- */
 
 /* Estilo das POSTAGENS */

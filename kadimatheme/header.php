@@ -62,11 +62,12 @@
                     'walker' => new WP_Bootstrap_Navwalker(),
                 ));
             ?>
-            <!-- Botão de Pesquisa de conteúdo -->
+            <!-- Botão de Pesquisa de conteúdo 
             <div class="search">
                 <?php get_search_form(); ?>
-                <button class="searchQ" type="submit"> Q </button>
+                <button class="searchQ" type="submit"> <p>Q</p> </button>
             </div>
+            -->
         </div>
     </nav>
 
